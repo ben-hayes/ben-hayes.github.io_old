@@ -5,7 +5,7 @@ Catecophony is a VST3/AU plugin that performs real-time corpus-based concatenati
 <img src="https://ben-hayes.github.io/catecophony.png" alt="Catecophony user interface" width="640">
 
 
-### Downloads
+## Downloads 
 
 Catecophony is currently in a very buggy alpha state. Please please please don't load this plugin into any projects that you care about, as it _will_ crash at some point.
 
@@ -14,33 +14,33 @@ That said, I'd love to hear what you think, so please download below (currently 
 * [macOS VST3 Download](https://github.com/ben-hayes/catecophony/releases/download/v0.0.1-alpha/VST3.Plugin.macOS.zip)
 * [macOS AU Download](https://github.com/ben-hayes/catecophony/releases/download/v0.0.1-alpha/AU.Audio.Unit.Plugin.macOS.zip)
 
-### Instructions
+## Instructions
 
 Catecophony is very simple to use. Simply drag and drop some audio (one file or many) onto the dark blue portion of the interface, wait for the plugin to analyse the grains, and then play some audio through the plugin. Try using sustained sounds for pulsating textures, drum sounds for glitchy chaos, instrument stems for bubbly stabs, and full tracks for a lot of sonic intensity.
 
 The controls in the yellow _Output_ panel affect the sound in real time.
 
-*Temperature* introduces a degree of randomness to the grain matching process. Useful at low settings for creating some movement, and at high settings for creating total disorientation.
+**Temperature** introduces a degree of randomness to the grain matching process. Useful at low settings for creating some movement, and at high settings for creating total disorientation.
 
-*Relative Matching* activates a slightly more nuanced approach to finding a path through the corpus. Turn it off for a less refined sound.
+**Relative Matching** activates a slightly more nuanced approach to finding a path through the corpus. Turn it off for a less refined sound.
 
-*Match Magnitude* attenuates the gain of the output grains to match that of the input grains. Turn this on if you want to follow the shape of the incoming audio, and off if you want to explore entirely new sound shapes.
+**Match Magnitude** attenuates the gain of the output grains to match that of the input grains. Turn this on if you want to follow the shape of the incoming audio, and off if you want to explore entirely new sound shapes.
 
-*LPF Cutoff* simply controls the cutoff frequency of a biquadratic Butterworth low-pass filter.
+**LPF Cutoff** simply controls the cutoff frequency of a biquadratic Butterworth low-pass filter.
 
-*Dry / Wet* blends in the original signal.
+**Dry / Wet** blends in the original signal.
 
 The controls in the red _Synthesis_ parameters affect the way the corpus is analysed and grains are matched. Changes here will not have any effect until you click the _Analyse Corpus_ button or drag in a new audio file.
 
-*Window Type* determines how the edges of grains are smoothed. The Rectangular option is equivalent to no window — expect lots of clicks. Hann & Hamming are safe bets, and Triangular can introduce some subtle variation to the texture of the sound.
+**Window Type** determines how the edges of grains are smoothed. The Rectangular option is equivalent to no window — expect lots of clicks. Hann & Hamming are safe bets, and Triangular can introduce some subtle variation to the texture of the sound.
 
-*Grain Size* signifies the size of the grains in terms of audio samples. Bigger grains mean more high level features of the corpus are retained, smaller grains offer more abstract timbral features.
+**Grain Size** signifies the size of the grains in terms of audio samples. Bigger grains mean more high level features of the corpus are retained, smaller grains offer more abstract timbral features.
 
-*Hop Size* controls how frequently grains are sampled from both the corpus and input stream, and in combination with the _Grain Size_ determines how much they overlap. A big overlap (large grain size and small hop size) can result in a smoother sound, but it also means your computer will have to do a lot more work, so be careful!
+**Hop Size** controls how frequently grains are sampled from both the corpus and input stream, and in combination with the _Grain Size_ determines how much they overlap. A big overlap (large grain size and small hop size) can result in a smoother sound, but it also means your computer will have to do a lot more work, so be careful!
 
-*Features* are the heart of Catecophony. These are numerical descriptions of the corpus and target grains, which are used to match the grains. They are also what determines how grains are projected into the visualisation. I'll update this soon with a list of descriptions, but for now, the default combination, or MFCC paired with RMS are good places to start. Note: F0 (fundamental frequency estimate) takes a lot longer to calculate than other features — only use if your computer is up to the job.
+**Features** are the heart of Catecophony. These are numerical descriptions of the corpus and target grains, which are used to match the grains. They are also what determines how grains are projected into the visualisation. I'll update this soon with a list of descriptions, but for now, the default combination, or MFCC paired with RMS are good places to start. Note: F0 (fundamental frequency estimate) takes a lot longer to calculate than other features — only use if your computer is up to the job.
 
-### Video
+## Video
 
 For a more complete overview of the plugin and how it works, check out this video:
 
